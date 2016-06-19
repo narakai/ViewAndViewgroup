@@ -16,8 +16,8 @@
     <com.example.leon.viewandviewgroup.CustomViewgroup
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        custom:horizontal_spacing="30dp"
-        custom:vertical_spacing="20dp">
+        custom:horizontal_spacing="20dp"
+        custom:vertical_spacing="30dp">
 
         <com.example.leon.viewandviewgroup.CustomView
             android:layout_width="wrap_content"
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:layout_centerInParent="true"
-            custom:titleText2="7212"
+            custom:titleText2="7213"
             custom:titleTextColor2="#ff0000"
             custom:titleTextSize2="40sp"
             />
@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:layout_centerInParent="true"
-            custom:titleText2="7212"
+            custom:titleText2="7214"
             custom:titleTextColor2="#ff0000"
             custom:titleTextSize2="40sp"
             />

@@ -68,9 +68,9 @@ public class CustomViewgroup extends ViewGroup {
             lp.x = width;
             lp.y = height;
 
-            if (lp.verticalSpacing >= 0) {
-                verticalSpacing = lp.verticalSpacing;
-            }
+//            if (lp.verticalSpacing >= 0) {
+//                verticalSpacing = lp.verticalSpacing;
+//            }
 
             width += child.getMeasuredWidth();
             height += verticalSpacing;
@@ -120,18 +120,18 @@ public class CustomViewgroup extends ViewGroup {
     public static class LayoutParams extends ViewGroup.LayoutParams {
         int x;
         int y;
-        public int verticalSpacing;
+//        public int verticalSpacing;
 
         public LayoutParams(Context context, AttributeSet attrs) {
             super(context, attrs);
 
-            TypedArray a = context.obtainStyledAttributes(attrs,
-                    R.styleable.CascadeLayout_LayoutParams);
-            try {
-                verticalSpacing = a.getDimensionPixelSize(R.styleable.CascadeLayout_LayoutParams_layout_vertical_spacing, -1);
-            } finally {
-                a.recycle();
-            }
+//            TypedArray a = context.obtainStyledAttributes(attrs,
+//                    R.styleable.CascadeLayout_LayoutParams);
+//            try {
+//                verticalSpacing = a.getDimensionPixelSize(R.styleable.CascadeLayout_LayoutParams_layout_vertical_spacing, -1);
+//            } finally {
+//                a.recycle();
+//            }
         }
 
         public LayoutParams(int w, int h) {
